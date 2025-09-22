@@ -16,6 +16,16 @@ body {
   animation: bgGradient 5s infinite;
 }
 
+#coordinates {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: black;
+  font-size: 1.2rem;
+  z-index: 10;
+}
+
 section {
   height: 100vh;
   display: flex;
@@ -29,7 +39,6 @@ section div:first-child {
 }
 
 img {
-  width: 80rem;
   margin-left: 7rem;
   transform: scale(1.2) rotate(-10deg);
   animation: imageBubble 3s ease-in-out infinite;
@@ -37,17 +46,28 @@ img {
 }
 
 h1 {
-  font-size: 6rem;
+  --x: 50%;
+  --y: 50%;
+  font-size: 5rem;
   text-transform: uppercase;
   white-space: nowrap;
+  background-image: radial-gradient(
+    circle at var(--x) var(--y),
+    rgba(0, 0, 0, 1) 0%,
+    rgba(29, 78, 253, 1) 50%,
+    rgba(69, 252, 176, 1) 100%
+  );
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-h1 div:first-child {
+div h1:first-child {
   transform: translate(-20rem);
   animation: titleSlide 1s;
 }
 
-h1 div:last-child {
+div h1:last-child {
   transform: translate(0);
   animation: titleSlideReverse 1s;
 }
