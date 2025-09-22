@@ -24,16 +24,13 @@ section {
 h1 {
   font-size: 6rem;
   text-transform: uppercase;
-  text-underline-offset: 0.9rem;
+}
 
-  div:first-child {
-    color: white;
-    transform: translate(-250px, 0);
-    text-decoration: underline;
-  }
+h1 div:first-child {
+  color: white;
+  transform: translate(-20rem);
+}
 
-  div:last-child {
-    transform: translate(250px, 0);
-    text-decoration: underline;
-  }
+h1 div:last-child {
+  transform: translate(10rem);
 }
