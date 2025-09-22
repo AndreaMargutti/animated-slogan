@@ -28,6 +28,8 @@ img {
   width: 80rem;
   margin-left: 7rem;
   transform: scale(1.2) rotate(-10deg);
+  animation: imageBubble 3s ease-in-out infinite;
+  animation-delay: 1s;
 }
 
 h1 {
