@@ -20,3 +20,16 @@ section {
   align-items: center;
   gap: 30rem;
 }
+
+h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  :first-child {
+    color: white;
+    transform: translate(-250px, 0);
+  }
+
+  :last-child {
+    transform: translate(250px, 0);
+  }
+}
