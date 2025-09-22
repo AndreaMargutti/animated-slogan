@@ -4,6 +4,10 @@
   font-family: "Sigmar One", sans-serif, cursive;
 }
 
+body {
+  background-color: blueviolet;
+}
+
 section {
   height: 100vh;
   display: flex;
