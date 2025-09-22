@@ -29,8 +29,30 @@ h1 {
 h1 div:first-child {
   color: white;
   transform: translate(-20rem);
+  animation: titleSlide 1s;
 }
 
 h1 div:last-child {
-  transform: translate(10rem);
+  transform: translate(0);
+  animation: titleSlideReverse 1s;
+}
+
+@keyframes titleSlide {
+  0% {
+    transform: translateX(-1000%);
+  }
+
+  100% {
+    transform: translateX(-20rem);
+  }
+}
+
+@keyframes titleSlideReverse {
+  0% {
+    transform: translateX(1000%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
