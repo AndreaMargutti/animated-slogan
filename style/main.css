@@ -24,6 +24,10 @@ section {
   gap: 30rem;
 }
 
+section div:first-child {
+  animation: titleSlideReverse 1s;
+}
+
 img {
   width: 80rem;
   margin-left: 7rem;
@@ -35,6 +39,7 @@ img {
 h1 {
   font-size: 6rem;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 h1 div:first-child {
