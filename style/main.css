@@ -43,7 +43,6 @@ h1 {
 }
 
 h1 div:first-child {
-  color: white;
   transform: translate(-20rem);
   animation: titleSlide 1s;
 }
@@ -51,4 +50,10 @@ h1 div:first-child {
 h1 div:last-child {
   transform: translate(0);
   animation: titleSlideReverse 1s;
+}
+
+h1 div {
+  background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
