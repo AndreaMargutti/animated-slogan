@@ -24,6 +24,12 @@ section {
   gap: 30rem;
 }
 
+img {
+  width: 80rem;
+  margin-left: 7rem;
+  transform: scale(1.2) rotate(-10deg);
+}
+
 h1 {
   font-size: 6rem;
   text-transform: uppercase;
