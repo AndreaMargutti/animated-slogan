@@ -40,6 +40,7 @@ h1 {
   font-size: 6rem;
   text-transform: uppercase;
   white-space: nowrap;
+  animation: textShine 3s ease-in-out infinite;
 }
 
 h1 div:first-child {
@@ -53,7 +54,26 @@ h1 div:last-child {
 }
 
 h1 div {
-  background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  background: linear-gradient(
+    90deg,
+    #7953cd 0%,
+    #00affa 25%,
+    #ffffff 50%,
+    #0190cd 75%,
+    #764ada 100%
+  );
+  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-size: 400% 100%;
+}
+
+@keyframes textShine {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
